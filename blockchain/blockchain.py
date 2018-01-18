@@ -67,6 +67,15 @@ class Blockchain(object):
         return hashlib.sha256(block_string).hexdigest()
 
 
+    @property
+    def last_block(self):
+        """
+        Retrun the last Block in the chain
+        """
+        return self.chain[-1]
+
+
+
 
 
 
