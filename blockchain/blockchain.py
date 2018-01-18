@@ -74,6 +74,20 @@ class Blockchain(object):
         """
         return self.chain[-1]
 
+    def proof_of_work(self, last_proof):
+        """
+        Simple Proof of Work Algorithm:
+            - Find a number p' such that hash(pp') contains leading 4 zeros,
+                where  p is theprevious p'
+            - p is the previous proof , and  p' is the new proof
+
+        :param last_proof: <int>
+        :return: <int>
+        """
+
+
+
+
 
 
 
