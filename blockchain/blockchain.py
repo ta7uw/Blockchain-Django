@@ -137,6 +137,7 @@ class Blockchain(object):
 
             last_block = block
             current_index += 1
+
         return True
 
     def resolve_conflicts(self):
