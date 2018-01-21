@@ -1,9 +1,7 @@
 import json
 import hashlib
 import requests
-from textwrap import dedent
 from time import time
-from uuid import uuid4
 from urllib.parse import urlparse
 
 
@@ -134,7 +132,7 @@ class Blockchain(object):
                 return False
 
             # Check that the Proof of Work is correct
-            if not self.valid_proof(last_block["proof"], block["proof"])
+            if not self.valid_proof(last_block["proof"], block["proof"]):
                 return False
 
             last_block = block
